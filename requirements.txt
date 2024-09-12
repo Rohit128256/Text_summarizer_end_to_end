@@ -13,6 +13,7 @@ boto3
 mypy-boto3-s3
 python-box
 ensure
+evaluate
 jinja2
 fastapi
 torch

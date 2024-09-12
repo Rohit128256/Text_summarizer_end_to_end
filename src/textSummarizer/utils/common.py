@@ -7,7 +7,7 @@ from box import ConfigBox
 from pathlib import Path
 from typing import Any
 
-@ensure_annotations
+@ensure_annotations # This decorator is used to detect any datatype related error
 def read_yaml(path_to_yaml : Path) -> ConfigBox:
     try:
         with open(path_to_yaml) as yaml_obj:

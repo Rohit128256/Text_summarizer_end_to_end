@@ -3,7 +3,6 @@ import urllib.request as request
 import zipfile
 from src.textSummarizer.logging import logging
 from src.textSummarizer.utils.common import get_size
-from box.exceptions import BoxValueError
 from pathlib import Path
 from src.textSummarizer.entity import DataIngestionConfig
 

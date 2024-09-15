@@ -4,6 +4,7 @@ from transformers import TrainingArguments, Trainer
 from datasets import load_dataset, load_from_disk
 from src.textSummarizer.entity import ModelTrainerConfig
 import torch
+import os
 
 class ModelTrainer:
     def __init__(self,config : ModelTrainerConfig):

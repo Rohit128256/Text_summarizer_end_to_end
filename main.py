@@ -6,6 +6,8 @@ from src.textSummarizer.pipeline.s4_model_trainer import ModelTrainerPipeline
 from src.textSummarizer.pipeline.s5_model_evaluation import ModelEvaluationPipeline
 from box.exceptions import BoxValueError
 
+# Entity(config_template) -> configuration_manager(gives_config_obj by using config_template from entity) -> components(takes the config_object and does the work according to its tasks) --(integration with pipeline)-> Pipeline(using configuration_manager and components we will define a pipeline or series of steps for the work to be done)
+
 STAGE_NAME = "Data Ingestion Stage"
 
 try:
